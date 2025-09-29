@@ -50,6 +50,7 @@ header .container {
     border-radius: 6px;
     text-shadow: none;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .download:hover {
@@ -161,4 +162,3 @@ section .description .title {
         margin-bottom: 20px;
     }
 }
-
