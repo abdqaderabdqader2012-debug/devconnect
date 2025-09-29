@@ -1,0 +1,126 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+    height: 1000px;
+}
+
+header {
+    background-color: #161b22; /* داكن أنيق */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.7);
+}
+header .container {
+    background-color: #1f2937; /* رمادي غامق */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 5px;
+}
+.logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 200px;
+    cursor: default;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.download{
+    color: #ffffff;
+    background-color: #00bcd4; /* أزرق تركواز */
+    font-size: 20px;
+    text-decoration: none;
+    height: fit-content;
+    margin: auto 20px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-shadow: none;
+    transition: 0.3s;
+}
+
+.download:hover {
+    transform: scale(1.07);
+    background-color: #0196a7; /* أزرق أغمق عند الهوفر */
+    text-shadow: 0 0 5px rgba(0,188,212,0.5);
+}
+
+section {
+    background-color: #0d1117; /* خلفية الصفحة */
+}
+
+section .container {
+    background-color: #161b22; /* خلفية الغريد */
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-top: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(autofill, 350px);
+    gap: 10px;
+}
+
+section .container .title {
+    color: #e0e0e0; /* نص فاتح */
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.8em;
+    direction: rtl;
+    grid-area: 1 / 3 / 2 / 5;
+}
+section .container .title span {
+    color: #ff4081; /* وردي مميز */
+    font-size: larger;
+    text-shadow: 0 0 4px rgba(255,64,129,0.6);
+}
+
+section .container .prog-image {
+    height: 100%;
+    grid-area: 1 / 1 / 2 / 3;
+}
+img {
+    width: 100%;
+}
+
+section hr {
+    width: 100%;
+    color: #00bcd4; /* خط تركواز */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-area: 2 / 1 / 3 / 5;
+}
+
+section .description {
+    background-color: #21262d; /* كروت بلون أغمق */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,188,212,0.2); /* ظل تركواز ناعم */
+    border-radius: 10px;
+}
+
+section .description.d1 {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+section .description.d2 {
+    grid-area: 3 / 3 / 4 / 5;
+}
+
+section .description .title {
+    color: #e0e0e0; /* نص فاتح */
+}
