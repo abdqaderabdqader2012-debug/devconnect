@@ -124,3 +124,41 @@ section .description.d2 {
 section .description .title {
     color: #e0e0e0; /* نص فاتح */
 }
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* يجعل العناصر فوق بعض */
+        align-items: flex-start; /* يزحزح اللوجو قليلًا لليسار */
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%; /* يملأ المساحة المتاحة */
+        justify-content: flex-start; /* يحرك اللوجو للجانب الأيسر */
+        margin-bottom: 10px; /* مسافة بين اللوجو والزر */
+    }
+
+    .download {
+        margin: 0; /* يزيل الهوامش السابقة */
+        width: 100%; /* الزر بعرض كامل */
+        text-align: center; /* النص في الوسط */
+        padding: 10px 0; /* ارتفاع الزر */
+    }
+
+    section .container {
+        display: block;
+        width: 95%;
+        padding: 10px;
+    }
+    section .container .title {
+        font-size: 20px;
+        grid-area: auto;
+    }
+    section .container .prog-image {
+        height: auto;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+}
+
