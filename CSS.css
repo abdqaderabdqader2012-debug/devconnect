@@ -138,6 +138,11 @@ section .description .title {
         justify-content: flex-start; /* يحرك اللوجو للجانب الأيسر */
         margin-bottom: 10px; /* مسافة بين اللوجو والزر */
     }
+    
+    .logo h1 {
+        font-size: 1.5em;
+        padding-top: 10px;
+    }
 
     .download {
         margin: 0; /* يزيل الهوامش السابقة */
@@ -162,3 +167,4 @@ section .description .title {
         margin-bottom: 20px;
     }
 }
+
